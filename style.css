@@ -1,15 +1,37 @@
 /*This is the CSS document, the thing that controls all the style of the website*/
 
 /*This is the background of the site*/
-body {
-  background: black;
-}
+
 
 
 /*This is the font used for the site*/
 body {
   font-family: 'Courier New', monospace, Verdana;
 }
+
+.text-pop-up-top {
+      animation: text-pop-up-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      font-family: 'Anton', sans-serif;
+      font-size: 100px;
+      text-align: center;
+    }
+
+    @keyframes text-pop-up-top {
+      0% {
+        transform: translateY(0);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+      }
+
+      100% {
+        transform: translateY(-50px);
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+      }
+    }
+    body{
+        background-color: aqua
+    }
 
 /*This is the code for the cool typing effect for the title*/
 .typewriter h1 {
