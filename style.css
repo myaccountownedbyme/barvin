@@ -110,6 +110,9 @@
 .game-link {
   margin: 15px 0;
 }
+a:link{
+color:white;
+}
 .game-description {
   font-size: 0.9em;
   color: #555;
