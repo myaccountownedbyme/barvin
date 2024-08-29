@@ -1,199 +1,244 @@
-/*This is the CSS document, the thing that controls all the style of the website*/
-
-/*This is the background of the site*/
 
 
 
-/*This is the font used for the site*/
-body {
-  font-family: 'Courier New', monospace, Verdana;
+.top-picks-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
 }
-body{
-font-color
+
+.top-picks-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+  z-index: 1;
 }
 
+.top-picks-button:hover {
+  color: #fff;
+  background-color: #333;
+  border-color: #333;
+}
+
+.top-picks-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  clip-path: inset(0 0 0 10%); /* Adjust the inset value to shift the line to the right */
+}
+
+
+  .update-log-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+.update-log-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+.update-log-button:hover {
+  color: #fff;
+  background-color: #333;
+  border-color: #333;
+}
+
+.update-log-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  clip-path: inset(0 0 0 10%); /* Adjust the inset value to shift the line to the right */
+}
+
+  .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #2d2b2b;
+}
+.container {
+  text-align: center;
+}
+ body{
+  color: #777;
+ }
+.game-links {
+  text-align: center;
+}
+.game-link {
+  margin: 15px 0;
+}
+.game-description {
+  font-size: 0.9em;
+  color: #555;
+  margin: 5px 0;
+}
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+hr {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #777;
+}
+.request-button {
+          display: inline-block;
+          padding: 12px 24px;
+          font-size: 16px;
+          font-family: 'Arial', sans-serif;
+          color: #333;
+          background-color: #fff;
+          border: 2px solid #333;
+          border-radius: 50px;
+          text-align: center;
+          text-decoration: none;
+          position: relative;
+          cursor: pointer;
+          overflow: hidden;
+          transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+      }
+
+      .request-button::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #fff;
+          transform: scaleX(0);
+          transform-origin: bottom right;
+          transition: transform 0.3s;
+          z-index: 1;
+      }
+
+      .request-button:hover {
+          color: #fff;
+          background-color: #333;
+          border-color: #333;
+      }
+
+      .request-button:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+          clip-path: inset(0 0 0 10%); /* Adjust the inset value to shift the line to the right */
+      }
 .text-pop-up-top {
-      animation: text-pop-up-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-      font-family: 'Anton', sans-serif;
-      font-size: 100px;
-      text-align: center;
-    }
+  animation: text-pop-up-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  font-family: 'Anton', sans-serif;
+  font-size: 100px;
+  text-align: center;
+}
 
-    @keyframes text-pop-up-top {
-      0% {
-        transform: translateY(0);
-        transform-origin: 50% 50%;
-        text-shadow: none;
-      }
+@keyframes text-pop-up-top {
+  0% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
 
-      100% {
-        transform: translateY(-50px);
-        transform-origin: 50% 50%;
-        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-      }
-    }
-    body{
-        background-color: grey
-    }
-
+  100% {
+    transform: translateY(-50px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
 .slide-in-left {
-	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* ----------------------------------------------
- * Generated by Animista on 2024-8-27 19:46:36
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
+* Generated by Animista on 2024-8-27 19:46:36
+* Licensed under FreeBSD License.
+* See http://animista.net/license for more info. 
+* w: http://animista.net, t: @cssanimista
+* ---------------------------------------------- */
 
 /**
- * ----------------------------------------
- * animation slide-in-left
- * ----------------------------------------
- */
- @-webkit-keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
+* ----------------------------------------
+* animation slide-in-left
+* ----------------------------------------
+*/
+@-webkit-keyframes slide-in-left {
+0% {
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+  opacity: 0;
+}
+100% {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
 }
 @keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
+0% {
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+  opacity: 0;
+}
+100% {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+}
+a:link {
+color: rgb(217, 202, 202);
+background-color: transparent;
+text-decoration: none;
 }
 
-/*This is the code for the cool typing effect for the title*/
-.typewriter h1 {
-    font-family: 'Courier New';
-    color: white;
-    letter-spacing: .17em;
-    margin: 0 auto;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: .17em solid pink;
-    animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
-    text-align: center;
-}
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-    to {
-      width: 100%
-    }
-  }
-  
-  @keyframes blinking-cursor {
-    from,
-    to {
-      border-color: transparent
-    }
-    50% {
-      border-color: black;
-    }
-}
-
-/*This is the color for the text*/
-h3 {
-  color: white;
-}
-
-p1 {
-  color: white;
-}
-
-a {
-  color: white;
-}
-
-/*Header info*/
-
-.container {
-	width: 80%;
-	margin: 0 auto;
-}
-
-header {
-  background: black;
-}
-
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.logo {
-  float: left;
-  padding: 10px 0;
-}
-
-nav {
-  float: right;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-
-  position: relative;
-}
-
-nav a {
-  color: gray;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: white;
-}
-
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: white;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
-
-
-h2 {
-  color: white;
+body{
+background-color: #2d2b2b;
 }
 
 
